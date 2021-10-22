@@ -5,5 +5,7 @@ fun main() {
         swordsJuggling =2
     }
 
+    swordsJuggling = swordsJuggling!!.plus(1)
+
     println("$swordsJuggling 개의 칼로 저글링합니다!")
 }
