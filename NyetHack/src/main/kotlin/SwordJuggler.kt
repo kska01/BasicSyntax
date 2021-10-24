@@ -11,6 +11,9 @@ fun main() {
     println("$swordsJuggling 개의 칼로 저글링합니다!")
 }
 
-fun proficiencyCheck(swordsJuggling: Int) {
+fun proficiencyCheck(swordsJuggling: Int?) {
     swordsJuggling ?: throw IllegalStateException("플레이어가 저글링을 할 수 없음")
 }
+
+class UnskilledSwordJugglerException() :
+        IllegalStateException("플레이어가 저글링을 할 수 없음")
