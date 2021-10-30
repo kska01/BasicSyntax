@@ -6,12 +6,17 @@ fun main() {
 }
 
 private fun toDragonSpeak(phrase: String) =
-    phrase.replace(Regex("[aeiou]")) {
+    phrase.replace(Regex("[AaEeIiOoUu]")) {
         when (it.value) {
+            "A" -> "4"
             "a" -> "4"
+            "E" -> "3"
             "e" -> "3"
+            "I" -> "1"
             "i" -> "1"
+            "O" -> "0"
             "o" -> "0"
+            "U" -> "|_|"
             "u" -> "|_|"
             else -> it.value
         }
