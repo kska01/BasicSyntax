@@ -7,8 +7,9 @@ fun main() {
     placeOrder("shandy,Dragon's Breath,5.91")
 }
 
-fun performPurchase() {
+fun performPurchase(price: Double) {
     displayBalance()
+    println("금화 $price 로 술을 구입함")
 }
 
 private fun displayBalance() {
@@ -41,7 +42,7 @@ private fun placeOrder(menuData: String) {
     val message = "마드리갈은 금화 $price 로 $name ($type)를 구입한다."
     println(message)
 
-    performPurchase()
+    performPurchase(price)
 
     val phrase = if (name == "Dragon's Breath") {
         "마드리갈이 감탄한다: ${toDragonSpeak("와, $name 진짜 좋구나!")}"
