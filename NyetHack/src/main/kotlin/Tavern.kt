@@ -3,7 +3,7 @@ const val TAVERN_NAME = "Taernyl's Folly"
 
 var playerGold = 10
 var playerSilver = 10
-val patronList = listOf("Eli", "Mordoc", "Sophie")
+val patronList = mutableListOf("Eli", "Mordoc", "Sophie")
 
 fun main() {
     if (patronList.contains("Eli")) {
@@ -18,6 +18,11 @@ fun main() {
         println("술집 주인이 말한다: 아니오, 나간 사람도 있습니다.")
     }
     placeOrder("shandy,Dragon's Breath,5.91")
+
+    println(patronList)
+    patronList.remove("Eli")
+    patronList.add("Alex")
+    println(patronList)
 }
 
 fun performPurchase(price: Double) {
