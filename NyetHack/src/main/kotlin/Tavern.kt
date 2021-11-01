@@ -22,6 +22,8 @@ fun main() {
     println(patronList)
     patronList.remove("Eli")
     patronList.add("Alex")
+    patronList.add(0, "Alex")
+    patronList[0] = "Alexis"
     println(patronList)
 }
 
