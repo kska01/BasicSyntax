@@ -19,12 +19,9 @@ fun main() {
     }
     placeOrder("shandy,Dragon's Breath,5.91")
 
-    println(patronList)
-    patronList.remove("Eli")
-    patronList.add("Alex")
-    patronList.add(0, "Alex")
-    patronList[0] = "Alexis"
-    println(patronList)
+    for (patron in patronList) {
+        println("좋은 밤입니다, $patron 님")
+    }
 }
 
 fun performPurchase(price: Double) {
