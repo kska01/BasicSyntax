@@ -19,7 +19,7 @@ fun main() {
     }
     placeOrder("shandy,Dragon's Breath,5.91")
 
-    for (patron in patronList) {
+    patronList.forEach { patron ->
         println("좋은 밤입니다, $patron 님")
     }
 }
