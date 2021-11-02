@@ -19,8 +19,8 @@ fun main() {
     }
     placeOrder("shandy,Dragon's Breath,5.91")
 
-    patronList.forEach { patron ->
-        println("좋은 밤입니다, $patron 님")
+    patronList.forEachIndexed { index, patron ->
+        println("좋은 밤입니다, $patron 님 - 당신은 #${index + 1} 번째입니다.")
     }
 }
 
