@@ -41,6 +41,9 @@ fun main() {
     }
 
     println(patronGold)
+    println(patronGold["Eli"])
+    println(patronGold["Mordoc"])
+    println(patronGold["Sophie"])
 }
 
 fun performPurchase(price: Double) {
