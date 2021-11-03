@@ -24,7 +24,7 @@ fun main() {
 
     patronList.forEachIndexed { index, patron ->
         println("좋은 밤입니다, $patron 님 - 당신은 #${index + 1} 번째입니다.")
-        placeOrder(patron, "shandy,Dragon's Breath,5.91")
+        placeOrder(patron, menuList.shuffled().first())
     }
 
     menuList.forEachIndexed { index, data ->
