@@ -10,6 +10,7 @@ val uniquePatrons = mutableSetOf<String>()
 val menuList = File("data/tavern-menu-items.txt")
     .readText()
     .split("\n")
+val patronGold = mapOf("Eli" to 10.5, "Mordoc" to 8.0, "Sophie" to 5.5)
 
 fun main() {
     if (patronList.contains("Eli")) {
@@ -38,6 +39,8 @@ fun main() {
         menuList.shuffled().first())
         orderCount++
     }
+
+    println(patronGold)
 }
 
 fun performPurchase(price: Double) {
