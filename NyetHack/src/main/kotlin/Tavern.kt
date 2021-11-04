@@ -41,6 +41,14 @@ fun main() {
         )
         orderCount++
     }
+
+    displayPatronBalances()
+}
+
+private fun displayPatronBalances() {
+    patronGold.forEach { patron, balance ->
+        println("$patron, balance: ${"%.2f".format(balance)}")
+    }
 }
 
 fun performPurchase(price: Double, patronName: String) {
