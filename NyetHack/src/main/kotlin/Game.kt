@@ -1,5 +1,4 @@
 fun main() {
-    val name = "마드리갈"
     var healthPoints = 89
     val isBlessed = true
     val isImmortal = false
@@ -13,7 +12,7 @@ fun main() {
     val healthStatus = formatHealthStatus(healthPoints, isBlessed)
 
     // 플레이어의 상태 출력
-    printPlayerStatus(auraColor, isBlessed, name, healthStatus)
+    printPlayerStatus(auraColor, isBlessed, player.name, healthStatus)
 
     performCombat()
     performCombat("Ulrich")
