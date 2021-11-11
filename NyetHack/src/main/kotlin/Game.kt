@@ -4,6 +4,8 @@ fun main() {
     val isBlessed = true
     val isImmortal = false
 
+    val player = Player()
+
     // 아우라
     val auraColor = auraColor(isBlessed, healthPoints, isImmortal)
 
