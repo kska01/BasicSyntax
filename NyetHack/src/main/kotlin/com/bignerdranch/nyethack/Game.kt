@@ -2,7 +2,7 @@ package com.bignerdranch.nyethack
 
 fun main() {
 
-    val player = Player()
+    val player = Player("Madrial", 89, true, false )
     player.castFireball()
 
     // 플레이어의 상태 출력
