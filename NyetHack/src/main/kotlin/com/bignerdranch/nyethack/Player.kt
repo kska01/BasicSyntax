@@ -13,7 +13,7 @@ class Player(_name: String,
             field = value.trim()
         }
 
-    val hometown: String = selectHometown()
+    val hometown by lazy { selectHometown()}
 
     init {
         require(healthPoints > 0, { "healthPoints는 0보다 커야 합니다."})
