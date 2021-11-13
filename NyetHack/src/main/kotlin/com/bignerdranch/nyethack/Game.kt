@@ -5,7 +5,7 @@ fun main() {
     val player = Player("Madigal")
     player.castFireball()
 
-    var currentRoom = Room("Foyer")
+    var currentRoom: Room = TownSquare()
     println(currentRoom.description())
     println(currentRoom.load())
 
