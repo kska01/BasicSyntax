@@ -2,7 +2,7 @@ package com.bignerdranch.nyethack
 
 fun main() {
 
-    val player = Player("Madigal")
+    val player = Player("Madrigal")
     player.castFireball()
 
     var currentRoom: Room = TownSquare()
