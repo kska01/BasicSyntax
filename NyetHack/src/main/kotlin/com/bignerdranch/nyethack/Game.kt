@@ -5,6 +5,10 @@ fun main() {
     val player = Player("Madigal")
     player.castFireball()
 
+    var currentRoom = Room("Foyer")
+    println(currentRoom.description())
+    println(currentRoom.load())
+
     // 플레이어의 상태 출력
     printPlayerStatus(player)
 
