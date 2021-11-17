@@ -47,6 +47,22 @@ object Game {
 
         private fun commandNotFound() = "적합하지 않은 명령입니다!"
     }
+
+    private fun move(directionInput: String) =
+        try {
+            val direction = Direction.valueOf(directionInput.toUpperCase())
+            val newPosition = direction.updateCoordinate(player.currentPosition)
+            if (!newPosition.isInBounds) {
+                throw IllegalStateException("$direction 쪽 방향이 범위를 벗어남.")
+            }
+
+            val newRoom = worldMap[newPosition.y][newPosition.x]
+            player.currentPosition = newPosition
+            currentRoom = newRoom
+            "OK, $direction 방향의 ${newRoom.name}로 이동했습니다."
+        } catch (e: Exception) {
+            "잘못된 방향임: $directionInput."
+        }
 }
 
 fun performCombat() {
