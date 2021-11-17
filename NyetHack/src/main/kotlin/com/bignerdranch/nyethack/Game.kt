@@ -9,6 +9,10 @@ object Game {
     private val player = Player("Madrigal")
     private var currentRoom: Room = TownSquare()
 
+    private var worldMap = listOf(
+        listOf(currentRoom, Room("Tavern"), Room("Back Room")),
+        listOf(Room("Long Corridor"), Room("Generic Room")))
+
     init {
         println("방문을 환영합니다.")
         player.castFireball()
