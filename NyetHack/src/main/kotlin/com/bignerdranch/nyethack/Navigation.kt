@@ -7,7 +7,7 @@ enum class Direction(private val coordinate: Coordinate) {
     WEST(Coordinate(-1,0));
 
     fun updateCoordinate(playerCoordinate: Coordinate) =
-        Coordinate + playerCoordinate
+        coordinate + playerCoordinate
 }
 
 data class Coordinate(val x: Int, val y: Int) {
