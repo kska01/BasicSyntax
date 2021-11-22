@@ -4,7 +4,7 @@ class Outer {
 
     private var no: Int = 0
 
-    var myInner = object {
+    private var myInner = object {
         val name: String = "kkang"
         fun innerFun() {
             println("innerFun....")
