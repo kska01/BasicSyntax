@@ -14,7 +14,7 @@ open abstract class Super2 {
 
 class Sub2: Super2(), Interface1, Interface2 {
     override fun funA() {
-        println("Sub2 funA...")
+        println("Sub2 funA....")
     }
 }
 
