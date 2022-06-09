@@ -7,7 +7,9 @@ fun main() {
         if (input > 1) {
             value += 6 * count
         }
+
         count++
+
         if (input <= value) break
     }
     println(count)
